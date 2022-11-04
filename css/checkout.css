@@ -90,11 +90,11 @@ a > img-overlay:focus {
 }
 
 .checkout {
-  background-color: rgb(224, 224, 224);
-  border-radius: 20px;
-  box-shadow: 0px 15px 20px #1687d933;
-  margin: 5rem;
-  display: block;
+  padding: 2rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  margin-bottom: 13rem;
+  
   /* justify-content: space-between; */
   /* align-items:center; */
 }
@@ -185,19 +185,23 @@ a > img-overlay:focus {
   font-weight: bold;
   color: rgb(0, 0, 0);
 }
-
-#payment_form {
-  background-color: rgb(224, 224, 224);
-  border-radius: 20px;
-  box-shadow: 0px 15px 20px #1687d933;
-  margin: 5rem;
+/*
+#payment_form .left{
+  
+  padding-top: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 4rem;
+  margin-right: 2rem;
+  margin-left: 2rem;
+  margin-bottom: 4rem;
   display: flex;
   justify-content: space-evenly;
 }
 
 .shipping_details,
 .payment_info {
-  /* border: black solid 0.1rem; */
+  /* border: black solid 0.1rem; 
   display: block;
   text-align: start;
   margin: 3rem 0;
@@ -210,23 +214,15 @@ a > img-overlay:focus {
 .cc_info {
   margin-bottom: 1.5rem;
 }
-
-input:hover {
-  box-shadow: 0 0 0.2rem 0.2rem rgb(222, 215, 16);
-}
-
-input:focus {
-  /* box-shadow: 0 0 0.2rem 0.2rem rgb(255, 105, 233); */
-  background-color: rgb(119, 243, 252);
-}
-
+*/
 .normal_input {
   border-radius: 0.3rem;
 }
 
 .submit {
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
+
 
 @media only screen and (max-width: 850px) {
   .main-nav {
@@ -267,6 +263,37 @@ input:focus {
   #payment_form {
     display: block;
     padding: 2rem;
+  }
+}
+
+/*HAMBURGER MENU FOR MOBILE SIZE SCREEN*/
+@media screen and (max-width: 50rem) {
+  /*
+    Navbar hamburger icon on mobile view
+    */
+  .navbar label {
+    display: inline-block;
+    color: white;
+    background: #000000;
+    font-style: normal;
+    padding: 1.25rem;
+  }
+  .navitems a {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    border-top: 0.1rem solid #000000;
+  }
+  /*
+    Toggles the hamburger icon in mobile view
+    */
+  .navitems {
+    display: none;
+    float: none;
+  }
+  .navbar input:checked ~ .navitems {
+    display: block;
+    float: none;
   }
 }
 

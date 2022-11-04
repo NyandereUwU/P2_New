@@ -1,0 +1,323 @@
+/*
+  STYLE GUIDE STYLING 
+  Default styling for the style guide 
+*/
+* {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: "Poppins", sans-serif;
+    /* padding: 2rem; */
+    /* background-image: linear-gradient(to top, #baf4ba 0%, #74d381 50%); */
+    background-color: white;
+    margin: 0;
+  }
+  
+  p {
+    margin-top: 0;
+    text-align: start;
+    width: 80%;
+  }
+  
+  /*Navigation Bar*/
+  .navbar {
+    background: white;
+    border-bottom: #e0e0e0 0.1rem;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    position: sticky;
+    border-bottom: #eee solid 0.1rem;
+  }
+  
+  .navbar img {
+    padding: 0.5rem;
+    vertical-align: bottom;
+  }
+  
+  .navbar label,
+  #hamburger {
+    display: none;
+  }
+  
+  .navitems {
+    display: flex;
+    float: right;
+  }
+  
+  .button-nav {
+    display: inline-block;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+    /* background-color: rgb(195, 195, 195); */
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    padding: 0.5rem 0.75rem;
+    margin: 1rem 1rem;
+    text-decoration: none;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+  }
+  
+  .button-nav:hover,
+  .button-nav:focus {
+    color: white;
+    background-color: black;
+  }
+  
+  .button-nav span {
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  
+  .button-nav:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+  /*Images*/
+  a > .img-overlay:hover,
+  a > .img-overlay:active,
+  a > img-overlay:focus {
+    opacity: 0.5;
+    transition: 0.5s ease;
+  }  
+  
+
+.payment-form {
+  font-family: 'Raleway', sans-serif;
+  padding-top: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 4rem;
+  margin-right: 2rem;
+  margin-left: 2rem;
+  margin-bottom: 4rem;
+  background-color: #ffffff;
+}
+
+.payment-form .details {
+  display: flex;
+  flex-direction: row;
+}
+
+.payment-form .details .left {
+  flex: 10 1 70%;
+  margin-right: 1rem;
+  border-right: 1rem #000;
+}
+
+.payment-form .details .right {
+  flex: 10 1 30%;
+}
+
+.payment-form .details label {
+  flex: none;
+  display: block;
+  width: 5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+}
+
+.payment-form .details input[type=text], .details input[type=month], .details input[type=email], .details input[type=tel] {
+  flex: 1 0 auto;
+  display: block;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+  height: 1.7rem;
+}
+
+.payment-form button {
+  float: right;
+}
+
+input {
+    border: 0.15rem solid #000000;
+    border-radius: 0.4rem;
+    padding: 0.1rem;
+    background-color: white;
+  }
+  
+  .input-stretch {
+    width: 25%;
+    transition: width 0.5s ease-in-out;
+  }
+  
+  .input-stretch:active, .input-stretch:focus {
+    width: 75%;
+    border: 0.3rem solid #000000;
+  }
+  
+  .input-gen:focus {
+    border: 0.2rem solid #ffffff;
+  }
+
+/* Checkout Radio Buttons */
+.radio-container {
+    display: block;
+    position: relative;
+    padding-left: 2.2rem;
+    margin-bottom: 0.75rem;
+    cursor: pointer;
+    font-size: 18px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  .radio-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .radio-selected {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: #dadada;
+    border-radius: 50%;
+  }
+  
+  .radio-selected:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .radio-container input:checked~.radio-selected:after {
+    display: block;
+  }
+  
+  .radio-container .radio-selected:after {
+    top: 0.5rem;
+    left: 0.5rem;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background: white;
+  }
+
+.radio-payment {
+    display: inline-block;
+    position: relative;
+    padding-left: 2.2rem;
+    margin-left: 0.75rem;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .radio-payment input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .radio-payment:hover input~.radio-selected {
+    background-color: #5c5c5c;
+  }
+  
+  .radio-payment input:checked~.radio-selected {
+    background-color: #000000;
+  }
+  
+  .radio-payment input:checked~.radio-selected:after {
+    display: block;
+  }
+  
+  .radio-payment .radio-selected:after {
+    top: 0.5rem;
+    left: 0.5rem;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background: white;
+  }
+
+.submitreset {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    color: white;
+    border-radius: 0.4rem;
+    border: none;
+    background-color: #000000;
+  }
+  
+  .submitreset:hover, .submitreset:active {
+    opacity: 60%;
+    text-decoration: none;
+    transition: 0.5s;
+  }
+  
+  .submitreset:focus {
+    font-weight: bold;
+  }
+
+/*FOOTER*/
+
+.footer {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #ffffff;
+    text-align: left;
+    color: rgb(0, 0, 0);
+    width: 100%;
+  }
+  
+  .footer h4 {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+  
+  .footer a, .footer a:visited{
+    text-decoration: none;
+    color: #74D381;
+  }
+  
+  .footer a:hover, .footer a:focus{
+    text-decoration: underline;
+    font-weight: bold;
+    color: #003d0d;
+  }
+
+  /*HAMBURGER MENU FOR MOBILE SIZE SCREEN*/
+@media screen and (max-width: 50rem) {
+    /*
+      Navbar hamburger icon on mobile view
+      */
+    .navbar label {
+      display: inline-block;
+      color: white;
+      background: #000000;
+      font-style: normal;
+      padding: 1.25rem;
+    }
+    .navitems a {
+      box-sizing: border-box;
+      display: block;
+      width: 100%;
+      border-top: 0.1rem solid #050505;
+    }
+    /*
+      Toggles the hamburger icon in mobile view
+      */
+    .navitems {
+      display: none;
+      float: none;
+    }
+    .navbar input:checked ~ .navitems {
+      display: block;
+      float: none;
+    }
+  }
+  
+
+

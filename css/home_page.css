@@ -284,7 +284,7 @@ a > img-overlay:focus {
   .navbar label {
     display: inline-block;
     color: white;
-    background: #74d381;
+    background: #000000;
     font-style: normal;
     padding: 1.25rem;
   }
@@ -292,7 +292,7 @@ a > img-overlay:focus {
     box-sizing: border-box;
     display: block;
     width: 100%;
-    border-top: 0.1rem solid #74d381;
+    border-top: 0.1rem solid #000000;
   }
   /*
     Toggles the hamburger icon in mobile view

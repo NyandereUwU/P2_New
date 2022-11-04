@@ -149,6 +149,37 @@ a > img-overlay:focus {
   
 }
 
+/*HAMBURGER MENU FOR MOBILE SIZE SCREEN*/
+@media screen and (max-width: 50rem) {
+  /*
+    Navbar hamburger icon on mobile view
+    */
+  .navbar label {
+    display: inline-block;
+    color: white;
+    background: #000000;
+    font-style: normal;
+    padding: 1.25rem;
+  }
+  .navitems a {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    border-top: 0.1rem solid #000000;
+  }
+  /*
+    Toggles the hamburger icon in mobile view
+    */
+  .navitems {
+    display: none;
+    float: none;
+  }
+  .navbar input:checked ~ .navitems {
+    display: block;
+    float: none;
+  }
+}
+
 /*FOOTER*/
 
 .footer {
