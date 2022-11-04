@@ -306,3 +306,31 @@ a > img-overlay:focus {
     float: none;
   }
 }
+
+/*FOOTER*/
+
+.footer {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: #ffffff;
+  text-align: left;
+  color: rgb(0, 0, 0);
+  width: 100%;
+}
+
+.footer h4 {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.footer a, .footer a:visited{
+  text-decoration: none;
+  color: #74D381;
+}
+
+.footer a:hover, .footer a:focus{
+  text-decoration: underline;
+  font-weight: bold;
+  color: #003d0d;
+}
+
