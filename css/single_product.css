@@ -1,0 +1,175 @@
+/*
+  STYLE GUIDE STYLING 
+  Default styling for the style guide 
+*/
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  /* padding: 2rem; */
+  /* background-image: linear-gradient(to top, #baf4ba 0%, #ffffff 50%); */
+  background: white;
+  margin:0;
+}
+
+.details {
+  display: flex;
+  gap: 4%;
+  max-width: 1800px;
+  margin: auto;
+  padding: 2rem;
+  /* border: solid black 0.5rem; */
+}
+
+p {
+  margin-top: 0;
+  text-align: start;
+  width: 100%;
+}
+
+/*Navigation Bar*/
+.navbar {
+  background: white;
+  border-bottom: #e0e0e0 0.1rem;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+  position: sticky;
+  border-bottom: #eee solid 0.1rem;
+}
+
+.navbar img {
+  padding: 0.5rem;
+  vertical-align: bottom;
+}
+
+/*
+  Hide hamburguer in standard view
+  */
+
+.navbar label,
+#hamburger {
+  display: none;
+}
+
+.navitems {
+  display: flex;
+  float: right;
+}
+
+.button-nav {
+  display: inline-block;
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  /* background-color: rgb(195, 195, 195); */
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  padding: 0.5rem 0.75rem;
+  margin: 1rem 1rem;
+  text-decoration: none;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
+}
+
+.button-nav:hover,
+.button-nav:focus {
+  color: white;
+  background-color: black;
+}
+
+.button-nav span {
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.button-nav:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/*Images*/
+a > .img-overlay:hover,
+a > .img-overlay:active,
+a > img-overlay:focus {
+  opacity: 0.5;
+  transition: 0.5s ease;
+}
+
+
+.details img {
+  width: 100%;
+}
+
+.product_images {
+  margin: 0 3rem;
+  width: 40%;
+  display: block;
+  gap: 2%;
+  /* border: solid 0.1rem black; */
+}
+
+.product_info {
+  width: 40%;
+}
+
+.small_pics {
+  display: flex;
+  /* border: solid 0.1rem black; */
+  gap: 1.5%;
+  width: 33%;
+  margin: 0.25rem 0;
+}
+
+.small_pics:hover{
+  cursor:pointer;
+}
+
+.size {
+  display: inline-block;
+  gap: 1rem;
+}
+
+.size button {
+  display: inline-block;
+  font-size: 1rem;
+  min-width: 10rem;
+  min-height: 6rem;
+  padding: 0.6em 1rem;
+  border-radius: 0.5rem;
+  margin: 0.2rem;
+  border: 1px solid #eee;
+  background-color: rgb(255, 254, 255);
+}
+
+.size button:hover,
+.size button:focus {
+  background: black;
+  color: white;
+}
+
+.add_to_bag {
+  margin: 1rem 0;
+}
+
+.add_to_bag a {
+  display: inline-block;
+  width: 100%;
+  background: black;
+  padding: 2rem 0;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  border-radius: 5rem;
+}
+
+.add_to_bag a:hover,
+.add_to_bag a:focus {
+  background: rgb(102, 102, 102);
+}
+
+.description{
+    margin-top: 5rem;
+}

@@ -1,0 +1,308 @@
+/*
+Home Page Styling
+*/
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  /* padding: 2rem; */
+}
+* {
+  box-sizing: border-box;
+  /* border:1px solid red; */
+}
+/*Navigation Bar*/
+.navbar {
+  background: white;
+  border-bottom: #e0e0e0 0.1rem;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+  position: sticky;
+  border-bottom: #eee solid 0.1rem;
+}
+
+.navbar img {
+  padding: 0.5rem;
+  vertical-align: bottom;
+}
+
+/*
+  Hide hamburguer in standard view
+  */
+
+.navbar label,
+#hamburger {
+  display: none;
+}
+
+.navitems {
+  display: flex;
+  float: right;
+}
+
+.button-nav {
+  display: inline-block;
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  /* background-color: rgb(195, 195, 195); */
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  padding: 0.5rem 0.75rem;
+  margin: 1rem 1rem;
+  text-decoration: none;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
+}
+
+.button-nav:hover,
+.button-nav:focus {
+  color: white;
+  background-color: black;
+}
+
+.button-nav span {
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.button-nav:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/*Images*/
+a > .img-overlay:hover,
+a > .img-overlay:active,
+a > img-overlay:focus {
+  opacity: 0.5;
+  transition: 0.5s ease;
+}
+
+.home_wallpaper {
+  background-image: url(../images/home.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  /* border:solid black 2px; */
+}
+
+.wallpaper_text a {
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: white solid 0.5rem;
+  border-radius: 1rem;
+  position: absolute;
+  top: 80%;
+  left: 80%;
+  font-size: 3rem;
+}
+
+.wallpaper_text a:hover {
+  color: rgb(210, 210, 210);
+}
+
+.about_container,
+#event_container2 {
+  background-color: black;
+  color: white;
+  display: flex;
+  width: 100vw;
+  margin: 0;
+}
+
+.about_container > div:nth-of-type(1),
+#event_container2 > div:nth-of-type(1) {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5rem;
+}
+
+.about_container > div:nth-of-type(2),
+#event_container2 > div:nth-of-type(2) {
+  width: 50%;
+  height: auto;
+  padding: 0;
+}
+
+.about_container img,
+#event_container2 img {
+  width: 100%;
+  height: 100%;
+}
+
+.about_container2,
+#event_container,
+#event_container3 {
+  background-color: black;
+  color: white;
+  display: flex;
+  width: 100vw;
+  margin: 0;
+}
+
+.about_container2 > div:nth-of-type(1),
+#event_container > div:nth-of-type(1),
+#event_container3 > div:nth-of-type(1) {
+  width: 50%;
+  height: auto;
+  padding: 0;
+}
+
+.about_container2 > div:nth-of-type(2),
+#event_container > div:nth-of-type(2),
+#event_container3 > div:nth-of-type(2) {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5rem;
+}
+
+.about_container2 img,
+#event_container img,
+#event_container3 img {
+  width: 100%;
+  height: 100%;
+}
+
+.stores {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact_text > div:nth-of-type(2) {
+  margin-bottom: 2rem;
+}
+
+.read_more a {
+  text-decoration: none;
+  color: white;
+  border: white solid 0.1rem;
+  border-radius: 0.3rem;
+  padding: 0.5rem;
+}
+
+.slideshow-container {
+  /* max-width: 1500px; */
+  background-color: black;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+.mySlides img {
+  width: 100vw;
+  height: 100vh;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dots {
+  background-color: black;
+  margin: 0;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*HAMBURGER MENU FOR MOBILE SIZE SCREEN*/
+@media screen and (max-width: 50rem) {
+  /*
+    Navbar hamburger icon on mobile view
+    */
+  .navbar label {
+    display: inline-block;
+    color: white;
+    background: #74d381;
+    font-style: normal;
+    padding: 1.25rem;
+  }
+  .navitems a {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    border-top: 0.1rem solid #74d381;
+  }
+  /*
+    Toggles the hamburger icon in mobile view
+    */
+  .navitems {
+    display: none;
+    float: none;
+  }
+  .navbar input:checked ~ .navitems {
+    display: block;
+    float: none;
+  }
+}

@@ -1,0 +1,150 @@
+/*
+  STYLE GUIDE STYLING 
+  Default styling for the style guide 
+*/
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  /* padding: 2rem; */
+  /* background-image: linear-gradient(to top, #baf4ba 0%, #74d381 50%); */
+  background:white;
+  margin:0;
+}
+
+p {
+  margin-top: 0;
+  text-align: start;
+  width: 80%;
+}
+
+ol,
+ul {
+  width: 85%;
+}
+
+/*Navigation Bar*/
+.navbar {
+  background: white;
+  border-bottom: #e0e0e0 0.1rem;
+  top: 0;
+  width: 100%;
+  overflow: hidden;
+  position: sticky;
+  border-bottom: #eee solid 0.1rem;
+}
+
+.navbar img {
+  padding: 0.5rem;
+  vertical-align: bottom;
+}
+
+/*
+  Hide hamburguer in standard view
+  */
+
+.navbar label,
+#hamburger {
+  display: none;
+}
+
+.navitems {
+  display: flex;
+  float: right;
+}
+
+.button-nav {
+  display: inline-block;
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  /* background-color: rgb(195, 195, 195); */
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  padding: 0.5rem 0.75rem;
+  margin: 1rem 1rem;
+  text-decoration: none;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-out;
+}
+
+.button-nav:hover,
+.button-nav:focus {
+  color: white;
+  background-color: black;
+}
+
+.button-nav span {
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.button-nav:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/*Images*/
+a > .img-overlay:hover,
+a > .img-overlay:active,
+a > img-overlay:focus {
+  opacity: 0.5;
+  transition: 0.5s ease;
+}
+
+.element a:hover img {
+  box-shadow: 0rem 0rem 0.5rem grey;
+  border: solid 0.1rem black;
+  /* border-radius: 1rem; */
+  transition-delay: 0s;
+}
+
+.element a:focus img {
+  border: 0.1rem solid black;
+}
+
+.element img {
+  width: 100%;
+}
+
+.product_list {
+  display: inline-block;
+  text-align: left;
+  /* box-shadow: 0px 5px 10px; */
+  /* padding: 1rem; */
+  /* background-color: #90ee90; */
+  background-color: white;
+  flex: 1;
+  flex-basis: 30%;
+}
+
+.products_list {
+  max-width: 1920px;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  gap: 1%;
+  margin: 5rem 3rem;
+}
+
+@media only screen and (max-width: 850px) {
+  .products_list {
+    display: inline-block;
+  }
+  .main-nav {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .products_list {
+    display: inline-block;
+    margin: 0;
+  }
+  .main-nav {
+    display: block;
+  }
+  
+}
