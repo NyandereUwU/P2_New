@@ -41,83 +41,142 @@
       </nav>
     </header>
 
-    <section>
-        <div class="payment-form">
-            <h2>Shipping and Payment Information</h2>
-            <h3>Billing Address</h3>
+    <!-- tutorial from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_checkout_form -->
+    <div class="row">
+      <div class="container">
+        <form action="/action_page.php">
+          <div class="row">
+            <div class="col-50">
+              <h3>Billing Address</h3>
+              <label for="fname">Full Name</label>
+              <input
+                type="text"
+                id="fname"
+                name="firstname"
+                placeholder="Cristiano Ronaldo"
+              />
+              <label for="email">Email</label>
+              <input
+                type="text"
+                id="email"
+                name="email"
+                placeholder="cr7@gmail.com"
+              />
+              <label for="adr">Address</label>
+              <input
+                type="text"
+                id="adr"
+                name="address"
+                placeholder="8888 University Dr."
+              />
+              <label for="city">City</label>
+              <input type="text" id="city" name="city" placeholder="Burnaby" />
 
-            <div class="details">
-                <label for="name">First Name</label>
-                <input type="text" id="fname" name="fname" placeholder="First">
-                <label for="name">Last Name</label>
-                <input type="text" id="lname" name="lname" placeholder="Last">
+              <label for="state">State</label>
+              <input type="text" id="state" name="state" placeholder="BC" />
+
+              <label for="zip">Zip</label>
+              <input type="text" id="zip" name="zip" placeholder="V5A 2C5" />
             </div>
 
-            <div class="details">
-                <label for="address">Address</label>
-                <input type="text" id="address" name="address" placeholder="123 Street">
-            </div>
+            <div class="col-50">
+              <h3>Payment</h3>
+              <label for="cname">Name on Card</label>
+              <input
+                type="text"
+                id="cname"
+                name="cardname"
+                placeholder="Cristiano Ronaldo"
+              />
+              <label for="ccnum">Credit card number</label>
+              <input
+                type="text"
+                id="ccnum"
+                name="cardnumber"
+                placeholder="1111-2222-3333-4444"
+              />
+              <label for="expmonth">Exp Month</label>
+              <input
+                type="text"
+                id="expmonth"
+                name="expmonth"
+                placeholder="10"
+              />
 
-            <div class="details">
-                <label for="city">City</label>
-                <input type="text" id="city" name="city" placeholder="Vancouver">
-                <label for="postalcode">Postal Code</label>
-                <input type="text" id="postalcode" name="postalcode">
-                <label for="prov">Province</label>
-                <input type="text" id="prov" name="prov" placeholder="BC">
-            </div>
+              <label for="expyear">Exp Year</label>
+              <input
+                type="text"
+                id="expyear"
+                name="expyear"
+                placeholder="2022"
+              />
 
-            <input type="checkbox" id="sameaddress" name="sameaddress" checked>
-            <label for="sameaddress">Shipping address same as billing address</label>
-
-            <h3>Payment</h3>
-            <h4>Select Credit/Debit Card Type</h4>
-            <div>
-                <label class="radio-payment">Visa
-                    <input type="radio" checked="checked" name="radio">
-                    <span class="radio-selected"></span>
-                </label>
-                <label class="radio-payment">Mastercard
-                    <input type="radio" name="radio">
-                    <span class="radio-selected"></span>
-                </label>
+              <label for="cvv">CVV</label>
+              <input type="text" id="cvv" name="cvv" placeholder="111" />
             </div>
-
-            <h4>Card Details</h4>
-            <div class="details">
-                <label for="name">Name on card:</label>
-                <input type="text" id="name" name="name" placeholder="First Last">
-            </div>
-
-            <div class="details">
-                <label for="cardnum">Card #:</label>
-                <input type="text" id="cardnum" name="cardnum" placeholder="111-2222-3333">
-                <label for="expiredate">Expiry:</label>
-                <input type="month" id="expiredate" name="expiredate">
-                <label for="cvv">CVV:</label>
-                <input type="text" id="cvv" name="cvv" placeholder="123">
-            </div>
-
-            <div class="details">
-                <label for="email">Email:</label>
-                <input type="email" id="email" required>
-                <label for="phone">Phone:</label>
-                <input type="tel" id="phone">
-            </div>
-            <form action="confirmed.html">              
-                <button class="submitreset">Submit</button>
-            </form>
-        </div>
-    </section>
+          </div>
+          <label>
+            <input type="checkbox" checked="checked" name="sameadr" />
+            Shipping address same as billing
+          </label>
+          <a href="confirmed.html">Submit</a>
+        </form>
+      </div>
+    </div>
 
     <footer class="footer">
-        <h4>Copyright 2022 @ IAT339 D101 - Team 7: Alex King & Eric Liu |
-          <a href="https://github.com/NyandereUwU/P2_New">Git Respository</a> |
-          <a href="main.html">Styleguide</a> |
-          <!-- <a href="citations.html">Citations</a> -->
-        </h4>
-      </footer>
-
+      <div class="footer_content">
+        <div class="footer_about">
+          <a href="about.html">
+            <img
+              alt="logo"
+              src="images/company_logo.jpg"
+              width="80rem"
+              height="80rem"
+          /></a>
+          <p>
+            Soccer Customization for You (SC4U) is a company dedicated to
+            creating custom soccer cleats exclusively for every soccer fan. Not
+            only do we have the latest soccer cleats, we also have a wide range
+            of personalized services such as laces, soles, personalized logo
+            printing and cleats painting. We will let you be the most unique and
+            shining star on the soccer field!
+          </p>
+        </div>
+        <div class="footer_menu">
+          <h2>Get Help</h2>
+          <div class="footer_menu_link">
+            <a href="about.html">Contact Us</a>
+            <a href="about.html">FAQ</a>
+            <a href="about.html">Delivery</a>
+            <a href="about.html">Return</a>
+            <a href="about.html">Follow Us</a>
+          </div>
+        </div>
+        <div class="footer_feedback">
+          <h2>Want to Say Something To Us?</h2>
+          <div class="feedback_info">
+            <div class="feedback_input">
+              <input
+                type="email"
+                name="email"
+                class="feedback_email_input"
+                placeholder="Your email address..."
+              />
+              <input
+                type="message"
+                name="message"
+                class="feedback_text_input"
+                placeholder="Say something here..."
+              />
+            </div>
+            <a href="about.html">Send</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer_bottom">
+        &copy;Soccer Customization for You | Designed by: Eric Liu & Alex King
+      </div>
+    </footer>
   </body>
-
-  </html>
+</html>

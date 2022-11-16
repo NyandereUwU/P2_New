@@ -13,8 +13,9 @@ body {
   margin: 0;
 }
 
-.margin {
-  margin-left: 5rem;
+.confirm_sheet{
+  text-align: center;
+  margin:10rem 0;
 }
 
 p {
@@ -89,214 +90,6 @@ a > img-overlay:focus {
   transition: 0.5s ease;
 }
 
-.payment-form {
-  font-family: "Raleway", sans-serif;
-  padding-top: 2rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-bottom: 4rem;
-  margin-right: 2rem;
-  margin-left: 2rem;
-  margin-bottom: 4rem;
-  background-color: #ffffff;
-}
-
-.payment-form .details {
-  display: flex;
-  flex-direction: row;
-}
-
-.payment-form .details .left {
-  flex: 10 1 70%;
-  margin-right: 1rem;
-  border-right: 1rem #000;
-}
-
-.payment-form .details .right {
-  flex: 10 1 30%;
-}
-
-.payment-form .details label {
-  flex: none;
-  display: block;
-  width: 5rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-  margin-right: 1rem;
-}
-
-.payment-form .details input[type="text"],
-.details input[type="month"],
-.details input[type="email"],
-.details input[type="tel"] {
-  flex: 1 0 auto;
-  display: block;
-  margin-bottom: 1rem;
-  margin-right: 1rem;
-  height: 1.7rem;
-}
-
-.payment-form button {
-  float: right;
-}
-
-input {
-  border: 0.15rem solid #000000;
-  border-radius: 0.4rem;
-  padding: 0.1rem;
-  background-color: white;
-}
-
-.input-stretch {
-  width: 25%;
-  transition: width 0.5s ease-in-out;
-}
-
-.input-stretch:active,
-.input-stretch:focus {
-  width: 75%;
-  border: 0.3rem solid #000000;
-}
-
-.input-gen:focus {
-  border: 0.2rem solid #ffffff;
-}
-
-/* Checkout Radio Buttons */
-.radio-container {
-  display: block;
-  position: relative;
-  padding-left: 2.2rem;
-  margin-bottom: 0.75rem;
-  cursor: pointer;
-  font-size: 18px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-.radio-container input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-}
-
-.radio-selected {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 1.5rem;
-  width: 1.5rem;
-  background-color: #dadada;
-  border-radius: 50%;
-}
-
-.radio-selected:after {
-  content: "";
-  position: absolute;
-  display: none;
-}
-
-.radio-container input:checked ~ .radio-selected:after {
-  display: block;
-}
-
-.radio-container .radio-selected:after {
-  top: 0.5rem;
-  left: 0.5rem;
-  width: 0.5rem;
-  height: 0.5rem;
-  border-radius: 50%;
-  background: white;
-}
-
-.radio-payment {
-  display: inline-block;
-  position: relative;
-  padding-left: 2.2rem;
-  margin-left: 0.75rem;
-  cursor: pointer;
-  font-size: 16px;
-}
-
-.radio-payment input {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-}
-
-.radio-payment:hover input ~ .radio-selected {
-  background-color: #5c5c5c;
-}
-
-.radio-payment input:checked ~ .radio-selected {
-  background-color: #000000;
-}
-
-.radio-payment input:checked ~ .radio-selected:after {
-  display: block;
-}
-
-.radio-payment .radio-selected:after {
-  top: 0.5rem;
-  left: 0.5rem;
-  width: 0.5rem;
-  height: 0.5rem;
-  border-radius: 50%;
-  background: white;
-}
-
-.submitreset {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  color: white;
-  border-radius: 0.4rem;
-  border: none;
-  background-color: #000000;
-}
-
-.submitreset:hover,
-.submitreset:active {
-  opacity: 60%;
-  text-decoration: none;
-  transition: 0.5s;
-}
-
-.submitreset:focus {
-  font-weight: bold;
-}
-
-/*FOOTER*/
-
-.footer {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  background-color: #ffffff;
-  text-align: left;
-  color: rgb(0, 0, 0);
-  width: 100%;
-}
-
-.footer h4 {
-  margin-left: 2rem;
-  margin-right: 2rem;
-}
-
-.footer a,
-.footer a:visited {
-  text-decoration: none;
-  color: #74d381;
-}
-
-.footer a:hover,
-.footer a:focus {
-  text-decoration: underline;
-  font-weight: bold;
-  color: #003d0d;
-}
 
 /*HAMBURGER MENU FOR MOBILE SIZE SCREEN*/
 @media screen and (max-width: 50rem) {
@@ -327,4 +120,164 @@ input {
     display: block;
     float: none;
   }
+}
+
+/* tutorial from https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_checkout_form */
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  /* margin: 0 -16px; */
+  /* margin:5rem 10rem; */
+  width:50vw;
+  margin:auto;
+}
+
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+
+
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 0.5rem;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+
+.container a, .confirm_sheet a {
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  padding: 0.5rem 1rem;
+  margin: 1rem;
+  border: none;
+  width: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.container a:hover, .confirm_sheet a:hover{
+  background: rgb(102, 102, 102);
+}
+
+.footer{
+  background-color:white;
+  color:black;
+  border-top: #eee solid 0.1rem;
+  /* height:20rem; */
+  /* position:relative; */
+}
+
+.footer_bottom{
+  background-color: black;
+  color:white;
+  text-align: center;
+  /* position: absolute; */
+}
+
+.footer_content{
+  display:flex;
+}
+
+.footer_about{
+  /* border:red solid 1px; */
+  flex:1;
+  padding:2rem 5rem;
+}
+
+.footer_menu{
+  flex:1;
+  padding:2rem 5rem;
+}
+
+.footer_menu_link{
+  display: block;
+  justify-content: center;
+}
+
+.footer_menu_link a{
+  width:10rem;
+  text-decoration: none;
+  color:black;
+  display: block;
+  padding:0.5rem 0;
+}
+
+.footer_menu_link a:hover{
+  text-decoration: underline;
+}
+
+.footer_feedback{
+  flex:1;
+  padding:2rem 5rem;
+}
+
+.feedback_input{
+  margin-bottom: 1rem;
+}
+
+.feedback_email_input{
+  display: block;
+  margin:1rem 0;
+  width:20rem;
+  height:2rem;
+  border:black solid 0.1rem;
+  border-radius: 0.5rem;
+}
+
+.feedback_text_input{
+  display: block;
+  width:20rem;
+  height:4rem;
+  border:black solid 0.1rem;
+  border-radius: 0.5rem;
+}
+
+.feedback_email_input:hover, .feedback_text_input:hover{
+  border:#b1b1b1 solid 0.1rem;
+}
+
+.feedback_email_input::placeholder, .feedback_text_input::placeholder{
+  color:#000000;
+  opacity: 0.5;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.footer_feedback a{
+  text-decoration: none;
+  border-radius: 0.8rem;
+  margin-top: 10rem;
+  padding:0.5rem 1rem;
+  background-color: black;
+  color:white;
+}
+
+.footer_feedback a:hover{
+  background: rgb(102, 102, 102);
 }
