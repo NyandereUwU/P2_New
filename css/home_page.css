@@ -169,6 +169,11 @@ a > img-overlay:focus {
   padding: 0.5rem;
 }
 
+.read_more a:hover {
+  color: #959595;
+  border: #959595 solid 0.1rem;
+}
+
 .slideshow-container {
   /* max-width: 1500px; */
   background-color: black;
@@ -313,123 +318,174 @@ a > img-overlay:focus {
   color: #003d0d;
 } */
 
-.footer{
-  background-color:white;
-  color:black;
+.footer {
+  background-color: white;
+  color: black;
   border-top: #eee solid 0.1rem;
   /* height:20rem; */
   /* position:relative; */
 }
 
-.footer_bottom{
+.footer_bottom {
   background-color: black;
-  color:white;
+  color: white;
   text-align: center;
   /* position: absolute; */
 }
 
-.footer_content{
-  display:flex;
+.footer_content {
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
-.footer_about{
+.footer_about {
   /* border:red solid 1px; */
-  flex:1;
-  padding:2rem 5rem;
+  flex: 1;
+  padding: 2rem 5rem;
 }
 
-.footer_menu{
-  flex:1;
-  padding:2rem 5rem;
+.footer_menu {
+  flex: 1;
+  padding: 2rem 5rem;
 }
 
-.footer_menu_link{
+.footer_menu_link {
   display: block;
   justify-content: center;
 }
 
-.footer_menu_link a{
-  width:10rem;
+.footer_menu_link a {
+  width: 10rem;
   text-decoration: none;
-  color:black;
+  color: black;
   display: block;
-  padding:0.5rem 0;
+  padding: 0.5rem 0;
 }
 
-.footer_menu_link a:hover{
+.footer_menu_link a:hover {
   text-decoration: underline;
 }
 
-.footer_feedback{
-  flex:1;
-  padding:2rem 5rem;
+.footer_feedback {
+  flex: 1;
+  padding: 2rem 5rem;
 }
 
-.feedback_input{
+.feedback_input {
   margin-bottom: 1rem;
 }
 
-.feedback_email_input{
+.feedback_email_input {
   display: block;
-  margin:1rem 0;
-  width:20rem;
-  height:2rem;
-  border:black solid 0.1rem;
+  margin: 1rem 0;
+  width: 20rem;
+  height: 2rem;
+  border: black solid 0.1rem;
   border-radius: 0.5rem;
 }
 
-.feedback_text_input{
+.feedback_text_input {
   display: block;
-  width:20rem;
-  height:4rem;
-  border:black solid 0.1rem;
+  width: 20rem;
+  height: 4rem;
+  border: black solid 0.1rem;
   border-radius: 0.5rem;
 }
 
-.feedback_email_input:hover, .feedback_text_input:hover{
-  border:#b1b1b1 solid 0.1rem;
+.feedback_email_input:hover,
+.feedback_text_input:hover {
+  border: #b1b1b1 solid 0.1rem;
 }
 
-.feedback_email_input::placeholder, .feedback_text_input::placeholder{
-  color:#000000;
+.feedback_email_input::placeholder,
+.feedback_text_input::placeholder {
+  color: #000000;
   opacity: 0.5;
   font-size: 1rem;
   font-weight: bold;
 }
 
-.footer_feedback a{
+.footer_feedback a {
   text-decoration: none;
   border-radius: 0.8rem;
   margin-top: 10rem;
-  padding:0.5rem 1rem;
+  padding: 0.5rem 1rem;
   background-color: black;
-  color:white;
+  color: white;
 }
 
-.footer_feedback a:hover{
+.footer_feedback a:hover {
   background: rgb(102, 102, 102);
 }
 
 @media (max-width: 50rem) {
-
-  .slideshow-container{
+  .slideshow-container {
     width: 100%;
   }
 
-  .about_container{
+  .about_container {
+    /* display: block; */
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 10rem;
+  }
+
+  #event_container {
+    /* display: block; */
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 10rem;
+  }
+
+  .about_container > div:nth-of-type(1),
+  #event_container2 > div:nth-of-type(1) {
+    width: 100%;
+  }
+
+  .about_container > div:nth-of-type(2),
+  #event_container2 > div:nth-of-type(2) {
+    width: 100%;
+  }
+
+  .about_container2 {
+    /* display: block; */
     flex-direction: column;
     width: 100%;
   }
 
-  .about_text{
-    flex-wrap: wrap;
-    width: 100%
+  #event_container2 {
+    /* display: block; */
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 10rem;
   }
 
-  .stores{
+  #event_container3 {
+    /* display: block; */
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 10rem;
+  }
+
+  .about_container2 > div:nth-of-type(1),
+  #event_container > div:nth-of-type(1),
+  #event_container3 > div:nth-of-type(1) {
     width: 100%;
   }
-  
+
+  .about_container2 > div:nth-of-type(2),
+  #event_container > div:nth-of-type(2),
+  #event_container3 > div:nth-of-type(2) {
+    width: 100%;
+  }
+
+  .about_text {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .stores {
+    width: 100%;
+  }
 }
