@@ -191,6 +191,8 @@ a > img-overlay:focus {
 
 .footer_content{
   display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .footer_about{

@@ -148,6 +148,7 @@ a > img-overlay:focus {
 }
 
 .container {
+  display: flex;
   background-color: #f2f2f2;
   padding: 5px 20px 15px 20px;
   border: 1px solid lightgrey;
@@ -155,6 +156,9 @@ a > img-overlay:focus {
 }
 
 input[type=text] {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   width: 100%;
   margin-bottom: 20px;
   padding: 12px;
@@ -202,6 +206,8 @@ label {
 
 .footer_content{
   display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .footer_about{
